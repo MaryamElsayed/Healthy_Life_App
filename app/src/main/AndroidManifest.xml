@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthy_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dinner_Meals"
+            android:parentActivityName=".Meals">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".First_D"
+            android:parentActivityName=".Dinner_Meals" />
+        <activity
+            android:name=".Second_D"
+            android:parentActivityName=".Dinner_Meals" />
+        <activity
+            android:name=".Third_D"
+            android:parentActivityName=".Dinner_Meals" />
+        <activity
+            android:name=".Forth_D"
+            android:parentActivityName=".Dinner_Meals" /> <!-- BreakFast Meals -->
+        <activity
+            android:name=".BreakFast_Meal"
+            android:parentActivityName=".Meals">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Forth_BF"
+            android:parentActivityName=".BreakFast_Meal" />
+        <activity
+            android:name=".Third_BF"
+            android:parentActivityName=".BreakFast_Meal" />
+        <activity
+            android:name=".Second_BF"
+            android:parentActivityName=".BreakFast_Meal" />
+        <activity
+            android:name=".First_BF"
+            android:parentActivityName=".BreakFast_Meal" /> <!-- Lunch Meals -->
+        <activity
+            android:name=".Lunch_Meals"
+            android:parentActivityName=".Meals">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Fourth_Meal"
+            android:parentActivityName=".Lunch_Meals" />
+        <activity
+            android:name=".Third_Meal"
+            android:parentActivityName=".Lunch_Meals" />
+        <activity
+            android:name=".Second_Meal"
+            android:parentActivityName=".Lunch_Meals" />
+        <activity
+            android:name=".First_Meal"
+            android:parentActivityName=".Lunch_Meals" />
+        <activity android:name=".Meals">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

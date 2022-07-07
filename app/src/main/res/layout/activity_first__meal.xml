@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".First_Meal">
+
+<!--Image-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/simpleImageView"
+        android:layout_width="188dp"
+        android:layout_height="177dp"
+        android:src="@drawable/korean_rice"
+        tools:layout_editor_absoluteY="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="25dp"
+        android:scaleType="centerCrop"
+        app:civ_border_color="#4CB354"
+        app:civ_border_width="2dp"
+        />
+
+<!--Title of Ingredients-->
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:text="Ingredients"
+        android:textColor="#61984C"
+        android:textColorHighlight="#4CAF50"
+        android:textColorHint="#9C27B0"
+        android:textSize="35dp"
+        android:textStyle="bold|italic"
+        app:fontFamily="sans-serif"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#61984C"
+        android:layout_below="@+id/ingredients"
+        android:background="#CCCCCC"/>
+
+<!--All ingredients-->
+
+    <TextView
+        android:id="@+id/steps_ingredent"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="210dp"
+        android:autoSizeTextType="uniform"
+        android:text="1 cup jasmine rice
+                      2 cups water
+                      2 English cucumbers
+                      2 pieces ginger root
+                      1 bunch green onions
+                      2 tbsp rice vinegar
+                      2 tsp honey
+                      ¼ tsp crushed red pepper"
+        android:textColor="#247027" />
+
+<!--Title of steps-->
+    <TextView
+        android:id="@+id/all_steps"
+        android:layout_width="2000dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="270dp"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:fontFamily="sans-serif"
+        android:text="Steps:"
+        android:textColor="#61984C"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="492dp" />
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-90dp"
+        android:backgroundTint="#61984C"
+        android:layout_below="@+id/all_steps"
+        android:background="#CCCCCC"/>
+
+<!--Steps-->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="350dp"
+        android:text="1) Toss cucumbers with vinegar in small bowl. Reserve for later use, stirring occasionally.\n"
+        android:textColor="#247027"
+        android:textSize="20dp"
+        app:fontFamily="sans-serif" />
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-25dp"
+        android:text="2) Cook rice in large nonstick skillet as directed on package, omitting salt. Spoon into 4 bowls; cover to keep warm."
+        android:textColor="#247027"
+        android:textSize="20dp"
+        app:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/text_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="1dp"
+        android:text="3) Add meat to skillet; cook until evenly browned, stirring frequently. Meanwhile, mix next 4 ingredients until blended."
+        android:textColor="#247027"
+        android:textSize="20dp"
+        app:fontFamily="sans-serif" />
+    <TextView
+        android:id="@+id/text_view4"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:text="4) Add garlic sauce mixture to meat; mix well. Spoon over rice."
+        android:textColor="#247027"
+        android:textSize="20dp"
+        app:fontFamily="sans-serif" />
+    <TextView
+        android:id="@+id/text_view5"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:text="5) Top with cucumbers, onions and sesame seed."
+        android:textColor="#247027"
+        android:textSize="20dp"
+        app:fontFamily="sans-serif" />
+</LinearLayout>
+
+</RelativeLayout>

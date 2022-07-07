@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forth_D">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--Image-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/two"
+            android:layout_width="188dp"
+            android:layout_height="177dp"
+            android:src="@drawable/beef"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="25dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#4CB354"
+            app:civ_border_width="2dp"
+            />
+
+        <!--Title of Ingredients-->
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="50dp"
+            android:text="Ingredients"
+            android:textColor="#61984C"
+            android:textColorHighlight="#4CAF50"
+            android:textColorHint="#9C27B0"
+            android:textSize="35dp"
+            android:textStyle="bold|italic"
+            app:fontFamily="sans-serif"
+            tools:layout_editor_absoluteX="238dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="#61984C"
+            android:layout_below="@+id/ingredients"
+            android:background="#CCCCCC"/>
+
+        <!--All ingredients-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="120dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text="• 2 boneless, skinless chicken breasts"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text="• ½ tsp olive oil"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text="• 400g can pinto beans, rinsed and drained"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/step4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text=" • 1 avocado, diced"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/step5"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text=" • 2 spring onions, sliced"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+        </LinearLayout>
+
+        <!--Title of steps-->
+        <TextView
+            android:id="@+id/all_steps"
+            android:layout_width="2000dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="270dp"
+            android:textSize="40dp"
+            android:textStyle="bold|italic"
+            app:fontFamily="sans-serif"
+            android:text="Steps:"
+            android:textColor="#61984C"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="492dp" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-90dp"
+            android:backgroundTint="#61984C"
+            android:layout_below="@+id/all_steps"
+            android:background="#CCCCCC"/>
+
+        <!--Steps-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/text_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="360dp"
+                android:text="1) To make the salsa, tip the beans, peppers, avocado and spring onions into a bowl."
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/text_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="-4dp"
+                android:text="2) Season, dress with the olive oil and lemon juice, and set aside."
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/text_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="1dp"
+                android:text="3) Lay the chicken breasts on a board and bash a bit to flatten them out slightly."
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/text_view4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:text="4) Place in a dish, drizzle with a little olive oil, then coat with the Cajun seasoning. "
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/text_view5"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:text="5) Heat a griddle pan and cook the chicken for 5 mins on each side, turning if you want to get a criss-cross pattern, until cooked all the way through."
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

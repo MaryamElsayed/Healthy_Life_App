@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".First_D">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--Image-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/two"
+            android:layout_width="188dp"
+            android:layout_height="177dp"
+            android:src="@drawable/sweet_potato"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="25dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="#4CB354"
+            app:civ_border_width="2dp"
+            />
+
+        <!--Title of Ingredients-->
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="50dp"
+            android:text="Ingredients"
+            android:textColor="#61984C"
+            android:textColorHighlight="#4CAF50"
+            android:textColorHint="#9C27B0"
+            android:textSize="35dp"
+            android:textStyle="bold|italic"
+            app:fontFamily="sans-serif"
+            tools:layout_editor_absoluteX="238dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="#61984C"
+            android:layout_below="@+id/ingredients"
+            android:background="#CCCCCC"/>
+
+        <!--All ingredients-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="120dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text="• 600g sweet potatoes, cut into chunk"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text="• 1 tsp chilli flakes"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text="• 2 avocados, chopped"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/step4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text=" • 250g tomatoes, cut into chunks"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+            <TextView
+                android:id="@+id/step5"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="210dp"
+                android:text=" • 1 small red onion"
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif"/>
+        </LinearLayout>
+
+        <!--Title of steps-->
+        <TextView
+            android:id="@+id/all_steps"
+            android:layout_width="2000dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="270dp"
+            android:textSize="40dp"
+            android:textStyle="bold|italic"
+            app:fontFamily="sans-serif"
+            android:text="Steps:"
+            android:textColor="#61984C"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="492dp" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-90dp"
+            android:backgroundTint="#61984C"
+            android:layout_below="@+id/all_steps"
+            android:background="#CCCCCC"/>
+
+        <!--Steps-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/text_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="360dp"
+                android:text="1) Heat oven to 200C/180C fan/ gas 6."
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/text_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="-4dp"
+                android:text="2) On a baking tray, toss the sweet potato in 1 tbsp of the oil with the chilli flakes, sea salt and pepper."
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/text_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="1dp"
+                android:text="3) Roast for 30 mins until tender."
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/text_view4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:text="4) Once the sweet potato is nearly ready, combine the remaining ingredients in a large bowl with the remaining 1 tbsp oil and season well."
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/text_view5"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:text="5) Mix everything well but take care to avoid squashing the avocado. Divide the salad evenly between plates, or serve sharing-style with the sweet potato chunks."
+                android:textColor="#247027"
+                android:textSize="20dp"
+                app:fontFamily="sans-serif" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

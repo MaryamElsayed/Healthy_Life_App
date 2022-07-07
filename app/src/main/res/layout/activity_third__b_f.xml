@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Third_BF">
+
+    <!--Image-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/two"
+        android:layout_width="188dp"
+        android:layout_height="177dp"
+        android:src="@drawable/strawberry"
+        tools:layout_editor_absoluteY="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="25dp"
+        android:scaleType="centerCrop"
+        app:civ_border_color="#4CB354"
+        app:civ_border_width="2dp"
+        />
+
+    <!--Title of Ingredients-->
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:text="Ingredients"
+        android:textColor="#61984C"
+        android:textColorHighlight="#4CAF50"
+        android:textColorHint="#9C27B0"
+        android:textSize="35dp"
+        android:textStyle="bold|italic"
+        app:fontFamily="sans-serif"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#61984C"
+        android:layout_below="@+id/ingredients"
+        android:background="#CCCCCC"/>
+
+    <!--All ingredients-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/step1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="210dp"
+            android:text="• 1 avocado"
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif"/>
+        <TextView
+            android:id="@+id/step2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="210dp"
+            android:text="• 6 slices bacon"
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif"/>
+        <TextView
+            android:id="@+id/step3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="210dp"
+            android:text="• 6 eggs"
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif"/>
+        <TextView
+            android:id="@+id/step4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="210dp"
+            android:text=" • 2 cloves garlic"
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif"/>
+        <TextView
+            android:id="@+id/step5"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="210dp"
+            android:text=" • 1 (16 oz) pkg strawberries"
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif"/>
+        <TextView
+            android:id="@+id/step6"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="210dp"
+            android:text=" • 1 head romaine lettuce"
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+    <!--Title of steps-->
+    <TextView
+        android:id="@+id/all_steps"
+        android:layout_width="2000dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="275dp"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:fontFamily="sans-serif"
+        android:text="Steps:"
+        android:textColor="#61984C"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="492dp" />
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-90dp"
+        android:backgroundTint="#61984C"
+        android:layout_below="@+id/all_steps"
+        android:background="#CCCCCC"/>
+
+    <!--Steps-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="360dp"
+            android:text="1) Place the eggs in a small saucepan and cover with cold water by about 1 inch. Cover with a lid and bring to a rolling boil over high heat."
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif" />
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="-1dp"
+            android:text="2) Preheat a skillet over medium heat."
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif" />
+        <TextView
+            android:id="@+id/text_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="1dp"
+            android:text="3) Wash and dry the remaining fresh produce."
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif" />
+        <TextView
+            android:id="@+id/text_view4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:text="4) Once the skillet is hot, add the bacon strips. Cook until the bacon is crispy, 3 to 4 minutes per side. Once done, transfer to a plate lined with paper towels."
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif" />
+        <TextView
+            android:id="@+id/text_view5"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:text="5) Trim off and discard the root ends of the garlic; peel and mince or press the garlic."
+            android:textColor="#247027"
+            android:textSize="20dp"
+            app:fontFamily="sans-serif" />
+    </LinearLayout>
+
+</RelativeLayout>
